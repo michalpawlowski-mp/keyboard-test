@@ -7,5 +7,46 @@
 body {
   width: 100vw;
   height: 100vh;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
   background-color: #484848;
+  display: flex;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.mouse {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.key,
+.mouse {
+  padding: 10px;
+  width: 55px;
+  height: 55px;
+  color: #eee;
+  background: #222;
+  transition:
+    color 0.1s ease,
+    background 0.1s ease;
+}
+
+.key.active,
+.mouse.active {
+  color: #4ade80;
+  background: #1a1a1a;
 }
