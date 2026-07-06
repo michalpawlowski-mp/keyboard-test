@@ -12,6 +12,6 @@ document.querySelector("#app").innerHTML = `
     ${keyboardKeys.map((key) => `<div class="key" data-key="${key.code}">${key.label}</div>`).join("")}
   </div>
   <div class="mouse">
-    ${mouseKeys.map((key) => `<div class="mouse" data-key="${key.code}">${key.label}</div>`).join("")}
+    ${mouseKeys.map((key) => `<div class="mouse-btn" data-key="${key.code}"></div>`).join("")}
   </div>
 `;
