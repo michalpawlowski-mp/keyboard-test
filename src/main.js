@@ -12,20 +12,20 @@ document.querySelector("#app").innerHTML = `
     <h1>Keyboard & Mouse Tester</h1>
     <p>Kliknij dowolny klawisz lub przycisk myszy, aby sprawdzić czy działa poprawnie.</p>
   </header>
-
-  <div class="keyboard">
+  <main>
+    <div class="keyboard">
     ${keyboardKeys
       .map(
         (row) => `
       <div class="keyboard-row">
-        ${row.map((key) => `<div class="key" data-key="${key.code}">${key.label}</div>`).join("")}
+      ${row.map((key) => `<div class="key" data-key="${key.code}">${key.label}</div>`).join("")}
       </div>
-    `,
+      `,
       )
       .join("")}
-  </div>
-
-  <div class="mouse">
+    </div>
+    <div class="mouse">
     ${mouseKeys.map((key) => `<div class="mouse-btn" data-key="${key.code}"></div>`).join("")}
-  </div>
+    </div>
+  </main>
 `;
