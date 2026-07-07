@@ -1,5 +1,6 @@
 export function keyboardEvents() {
   window.addEventListener("keydown", (e) => {
+    e.preventDefault();
     const keyEl = document.querySelector(`[data-key="${e.code}"]`);
     if (keyEl) keyEl.classList.add("active");
   });
