@@ -80,7 +80,6 @@ const keyboardRows = [
     { code: "KeyL", label: "L" },
     { code: "Semicolon", label: ":;" },
     { code: "Quote", label: "\"'" },
-    { code: "ShiftLeft", label: "Shift" },
     { code: "Backslash", label: "\\|" },
     { code: "Numpad4", label: "4" },
     { code: "Numpad5", label: "5" },
@@ -88,6 +87,7 @@ const keyboardRows = [
   ],
   // Rząd 5 - ZXCV
   [
+    { code: "ShiftLeft", label: "Shift" },
     { code: "KeyZ", label: "Z" },
     { code: "KeyX", label: "X" },
     { code: "KeyC", label: "C" },
@@ -112,7 +112,6 @@ const keyboardRows = [
     { code: "AltLeft", label: "Alt" },
     { code: "Space", label: "Space" },
     { code: "AltRight", label: "Alt" },
-    { code: "MetaRight", label: "Win" },
     { code: "ContextMenu", label: "Menu" },
     { code: "ControlRight", label: "Ctrl" },
     { code: "ArrowLeft", label: "←" },

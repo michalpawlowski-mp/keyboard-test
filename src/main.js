@@ -10,7 +10,11 @@ mouseEvents();
 document.querySelector("#app").innerHTML = `
   <header>
     <h1>Keyboard & Mouse Tester</h1>
-    <p>Kliknij dowolny klawisz lub przycisk myszy, aby sprawdzić czy działa poprawnie.</p>
+    <p class="intro">Kliknij dowolny klawisz lub przycisk myszy, aby sprawdzić czy działa poprawnie.</p>
+    <p class="disclaimer">
+      Uwaga: klawisz Win zadziała poprawnie w teście, ale ze względów systemowych
+      dodatkowo otworzy menu Start.
+    </p>
   </header>
   <main>
     <div class="keyboard">

@@ -49,10 +49,17 @@ h1::after {
   }
 }
 
-header p {
+.intro {
   margin-top: 0.6rem;
   color: #9a9aa2;
   font-size: 0.95rem;
+}
+
+.disclaimer {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #828286;
+  font-style: italic;
 }
 
 main {
@@ -66,20 +73,27 @@ main {
   border: 1px solid #9a9aa2;
   border-radius: 15px;
   padding: 10px;
+  padding-bottom: 30px;
   display: flex;
   margin: auto;
   flex-direction: column;
+  width: 43.7cm;
   height: max-content;
 }
+
 .keyboard-row {
   display: flex;
 }
+
 .key {
   background-color: #292929;
+  width: 1.2cm;
+  height: 1.2cm;
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
 }
+
 .key.active,
 .mouse-btn.active {
   background-color: #395ed4;
@@ -91,15 +105,48 @@ main {
   padding: 10px;
   margin: auto;
   height: 300px;
+  width: 5.7cm;
   border-radius: 20px 20px 15px 15px;
 }
+
 .mouse-btn {
   background-color: #292929;
   padding: 10px;
   margin: 5px;
   height: 10px;
 }
+
 .mouse-btn:first-child,
 .mouse-btn:last-child {
   width: 100px;
+}
+
+.key[data-key="Escape"] {
+  margin-right: 60px;
+}
+.key[data-key="F4"],
+.key[data-key="F9"] {
+  margin-right: 40px;
+}
+.key[data-key="F12"] {
+  margin-right: 15px;
+}
+.key[data-key="Space"] {
+  width: 11.1cm;
+}
+.key[data-key="Tab"] {
+  width: 2cm;
+}
+.key[data-key="CapsLock"] {
+  width: 2.5cm;
+}
+.key[data-key="ShiftLeft"] {
+  width: 3cm;
+}
+.key[data-key="AltRight"] {
+  margin-right: 1.2cm;
+}
+.key[data-key="Backspace"] {
+  width: 3cm;
+  margin-right: 15px;
 }
