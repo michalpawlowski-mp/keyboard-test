@@ -17,7 +17,8 @@ Projekt stworzony dla zabawy i do portfolio — prosty, ale kompletny przykład 
 
 ### Znane ograniczenia
 
-Przyciski boczne myszy (wstecz/dalej) zostały celowo usunięte z testera. W większości przeglądarek wywołują nawigację w historii na poziomie systemowym, którego nie da się zablokować z poziomu JavaScript — więc ich testowanie psułoby UX (cofałoby stronę zamiast pokazywać wynik testu).
+- **Przyciski boczne myszy (wstecz/dalej)** zostały celowo usunięte z testera. W większości przeglądarek wywołują nawigację w historii na poziomie systemowym, którego nie da się zablokować z poziomu JavaScript — więc ich testowanie psułoby UX (cofałoby stronę zamiast pokazywać wynik testu).
+- **Klawisz Win** zadziała poprawnie w teście (podświetli się na wizualnej klawiaturze), ale ze względów systemowych dodatkowo otworzy menu Start — przeglądarka nie ma możliwości zablokowania tego zachowania, bo jest ono przechwytywane przez system operacyjny zanim JavaScript zdąży zareagować.
 
 ## 🛠️ Stack technologiczny
 
