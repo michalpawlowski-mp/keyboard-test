@@ -76,8 +76,10 @@ main {
   padding-bottom: 30px;
   display: flex;
   margin: auto;
+  font-size: 10px;
+  text-align: center;
   flex-direction: column;
-  width: 43.7cm;
+  width: max-content;
   height: max-content;
 }
 
@@ -125,20 +127,20 @@ main {
   margin-right: 60px;
 }
 .key[data-key="F4"],
-.key[data-key="F9"] {
-  margin-right: 40px;
+.key[data-key="F8"] {
+  margin-right: 33px;
 }
 .key[data-key="F12"] {
   margin-right: 15px;
 }
 .key[data-key="Space"] {
-  width: 11.1cm;
+  width: 10.65cm;
 }
 .key[data-key="Tab"] {
   width: 2cm;
 }
 .key[data-key="CapsLock"] {
-  width: 2.5cm;
+  width: 90px;
 }
 .key[data-key="ShiftLeft"] {
   width: 3cm;
@@ -147,6 +149,50 @@ main {
   margin-right: 1.2cm;
 }
 .key[data-key="Backspace"] {
-  width: 3cm;
+  width: 100px;
   margin-right: 15px;
 }
+.key[data-key="Backslash"] {
+  width: 70px;
+}
+.key[data-key="Enter"] {
+  width: 110px;
+}
+.key[data-key="ShiftRight"] {
+  width: 142px;
+}
+.key[data-key="ControlLeft"],
+.key[data-key="MetaLeft"],
+.key[data-key="AltLeft"],
+.key[data-key="AltRight"],
+.key[data-key="ContextMenu"],
+.key[data-key="ControlRight"] {
+  width: 1.4cm;
+}
+
+.key[data-key="ControlRight"],
+.key[data-key="Enter"],
+.key[data-key="Backslash"],
+.key[data-key="Backspace"],
+.key[data-key="F12"] {
+  margin-right: 20px;
+}
+
+.key[data-key="ShiftRight"] {
+  margin-right: 75px;
+}
+.key[data-key="ArrowUp"] {
+  margin-right: 65px;
+}
+.key[data-key="Enter"] {
+  margin-right: 188px;
+}
+.key[data-key="ArrowRight"] {
+  margin-right: 8px;
+}
+.key[data-key="Numpad0"] {
+  width: 100px;
+}
+/* .key[data-key="NumpadEnter"] {
+  height: 100px;
+} */
