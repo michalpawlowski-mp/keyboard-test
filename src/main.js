@@ -11,10 +11,11 @@ document.querySelector("#app").innerHTML = `
   <header>
     <h1>Keyboard & Mouse Tester</h1>
     <p class="intro">Kliknij dowolny klawisz lub przycisk myszy, aby sprawdzić czy działa poprawnie.</p>
-    <p class="disclaimer">
-      Uwaga: klawisz Win zadziała poprawnie w teście, ale ze względów systemowych
-      dodatkowo otworzy menu Start.
-    </p>
+<p class="disclaimer">
+  <b>Uwaga:</b> klawisz Win zadziała poprawnie w teście, ale ze względów systemowych dodatkowo otworzy menu Start.
+  Boczne przyciski myszy (wstecz/dalej) zostały całkowicie usunięte z testu, ponieważ ograniczenia
+  systemowe i przeglądarkowe uniemożliwiały przeprowadzenie ich rzetelnego testu.
+</p>
   </header>
   <main>
     <div class="keyboard">
