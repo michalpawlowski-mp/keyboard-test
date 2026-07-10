@@ -19,6 +19,20 @@ document.querySelector("#app").innerHTML = `
   </header>
   <main>
     <div class="keyboard">
+<div class="lock-indicators">
+  <div class="lock-indicator">
+    <div class="lock-dot" data-lock="NumLock"></div>
+    Num Lock
+  </div>
+  <div class="lock-indicator">
+    <div class="lock-dot" data-lock="CapsLock"></div>
+    Caps Lock
+  </div>
+  <div class="lock-indicator">
+    <div class="lock-dot" data-lock="ScrollLock"></div>
+    Scr Lock
+  </div>
+</div>
     ${keyboardKeys
       .map(
         (row) => `
@@ -32,5 +46,8 @@ document.querySelector("#app").innerHTML = `
     <div class="mouse">
     ${mouseKeys.map((key) => `<div class="mouse-btn" data-key="${key.code}"></div>`).join("")}
     </div>
+
+
   </main>
+
 `;

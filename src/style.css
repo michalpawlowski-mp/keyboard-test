@@ -236,3 +236,34 @@ main {
   right: 0px;
   height: 100px;
 }
+
+.lock-indicators {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  color: white;
+}
+
+.lock-indicator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lock-dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid gray;
+  transition: background-color 0.1s ease;
+}
+
+.lock-dot.locked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
