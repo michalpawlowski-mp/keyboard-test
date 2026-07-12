@@ -70,6 +70,7 @@ main {
 }
 
 .keyboard {
+  position: relative;
   color: white;
   border: 1px solid #9a9aa2;
   border-radius: 15px;
@@ -101,11 +102,25 @@ main {
   justify-content: center;
   color: var(--text-light);
   font-family: var(--font-mono);
+  box-shadow:
+    0 3px 0 #1a1a1a,
+    0 4px 6px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.06s ease,
+    box-shadow 0.06s ease,
+    background-color 0.06s ease;
 }
 
 .key.active,
 .mouse-btn.active {
   background-color: var(--accent);
+}
+
+.key.active {
+  transform: translateY(2px);
+  box-shadow:
+    0 1px 0 #1a1a1a,
+    0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .mouse {
@@ -119,6 +134,8 @@ main {
 
   display: flex;
   justify-content: space-between;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
 .mouse-btn {
@@ -266,4 +283,12 @@ main {
 .lock-dot.locked {
   background-color: var(--accent);
   border-color: var(--accent);
+}
+
+@media (max-width: 960px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
