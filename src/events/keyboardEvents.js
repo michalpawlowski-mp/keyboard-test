@@ -2,7 +2,10 @@ export function keyboardEvents() {
   window.addEventListener("keydown", (e) => {
     e.preventDefault();
     const keyEl = document.querySelector(`[data-key="${e.code}"]`);
-    if (keyEl) keyEl.classList.add("active");
+    if (keyEl) {
+      keyEl.classList.add("active");
+      keyEl.classList.add("tested");
+    }
 
     updateLockIndicators(e);
   });
@@ -10,6 +13,15 @@ export function keyboardEvents() {
   window.addEventListener("keyup", (e) => {
     const keyEl = document.querySelector(`[data-key="${e.code}"]`);
     if (keyEl) keyEl.classList.remove("active");
+  });
+
+  window.addEventListener("mousemove", updateLockIndicators, { once: true });
+  window.addEventListener("click", updateLockIndicators);
+
+  const resetBtn = document.querySelector("#reset");
+  resetBtn.addEventListener("click", () => {
+    const testedKeys = document.querySelectorAll(".key.tested");
+    testedKeys.forEach((key) => key.classList.remove("tested"));
   });
 }
 

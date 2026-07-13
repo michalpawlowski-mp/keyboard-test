@@ -17,23 +17,24 @@ function renderApp() {
         zostały całkowicie usunięte z testu, ponieważ ograniczenia systemowe i
         przeglądarkowe uniemożliwiały przeprowadzenie ich rzetelnego testu.
       </p>
+      <button type="button" id="reset">reset</button>
     </header>
     <main>
       <div class="keyboard">
-        <div class="lock-indicators">
-          <div class="lock-indicator">
-            <div class="lock-dot" data-lock="NumLock"></div>
-            Num Lock
-          </div>
-          <div class="lock-indicator">
-            <div class="lock-dot" data-lock="CapsLock"></div>
-            Caps Lock
-          </div>
-          <div class="lock-indicator">
-            <div class="lock-dot" data-lock="ScrollLock"></div>
-            Scr Lock
-          </div>
+      <div class="lock-indicators">
+        <div class="lock-indicator">
+          <div class="lock-dot" data-lock="NumLock"></div>
+          Num Lock
         </div>
+        <div class="lock-indicator">
+          <div class="lock-dot" data-lock="CapsLock"></div>
+          Caps Lock
+        </div>
+        <div class="lock-indicator">
+          <div class="lock-dot" data-lock="ScrollLock"></div>
+          Scr Lock
+        </div>
+      </div>
         ${keyboardKeys
           .map(
             (row) => `
