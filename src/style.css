@@ -73,6 +73,7 @@ main {
   position: relative;
   color: white;
   border: 1px solid #9a9aa2;
+  background: #2a2b30;
   border-radius: 15px;
   padding: 10px;
   padding-bottom: 30px;
@@ -124,22 +125,20 @@ main {
 }
 
 .mouse {
-  width: 5.7cm;
+  position: relative;
+  width: 220px;
   height: 300px;
   border: 1px solid #9a9aa2;
-  border-radius: 85px;
-
+  border-radius: 80px;
   margin: auto;
-  padding: 12px 10px;
-
   display: flex;
   justify-content: space-between;
 
+  background: linear-gradient(160deg, #2a2b30 0%, #1c1d21 100%);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
 .mouse-btn {
-  background: #292929;
   cursor: default;
   transition:
     background-color 0.08s ease,
@@ -147,23 +146,26 @@ main {
 }
 
 .mouse-btn:nth-child(1) {
-  width: 42%;
-  height: 110px;
-  border-radius: 70px 20px 15px 15px;
+  width: 50%;
+  height: 150px;
+  border-radius: 80px 20px 15px 15px;
 }
 
 .mouse-btn:nth-child(2) {
+  position: absolute;
   width: 16px;
   height: 45px;
   margin-top: 18px;
   border-radius: 999px;
+  right: 47%;
+  z-index: 1;
   background: #3c3c3c;
 }
 
 .mouse-btn:nth-child(3) {
-  width: 42%;
-  height: 110px;
-  border-radius: 20px 70px 15px 15px;
+  width: 50%;
+  height: 150px;
+  border-radius: 20px 80px 15px 15px;
 }
 
 .mouse-btn.active {
@@ -256,7 +258,7 @@ main {
 
 .lock-indicators {
   position: absolute;
-  right: 0;
+  right: 15px;
   margin-top: 10px;
   width: 200px;
   height: 40px;
