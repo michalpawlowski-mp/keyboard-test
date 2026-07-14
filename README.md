@@ -2,7 +2,7 @@
 
 Wizualny tester klawiatury i myszy — sprawdź, czy wszystkie klawisze i przyciski działają poprawnie. Kliknij fizyczny klawisz lub przycisk myszy, a odpowiadający mu element na ekranie podświetli się w czasie rzeczywistym.
 
-🔗 **Live demo:** [](#)
+🔗 **Live demo:** [https://keyboard-test-eight.vercel.app/](#)
 
 ## 📋 O projekcie
 
