@@ -6,7 +6,8 @@
 
 :root {
   --text-light: #e8e5dd;
-  --accent: #395ed4;
+  --accent: #666666;
+  --glow: #395ed4;
   --font-display: "Segoe UI", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
 }
@@ -15,6 +16,10 @@ body {
   height: 100vh;
   width: 100vw;
   background: #17181c;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #app {
@@ -106,7 +111,7 @@ main {
   font-family: var(--font-mono);
   box-shadow:
     0 3px 0 #1a1a1a,
-    0 4px 6px rgba(0, 0, 0, 0.4);
+    0 4px 10px color-mix(in srgb, var(--glow) 35%, transparent);
   transition:
     transform 0.06s ease,
     box-shadow 0.06s ease,
@@ -126,9 +131,9 @@ main {
 }
 
 .key.tested {
-  background-color: #223a2e;
+  background-color: #373822;
   box-shadow:
-    inset 0 0 0 1px #4ade80,
+    inset 0 0 0 1px #cfde4a,
     0 3px 0 #1a1a1a,
     0 4px 6px rgba(0, 0, 0, 0.4);
 }
@@ -136,7 +141,7 @@ main {
 .key.tested.active {
   background-color: var(--accent);
   box-shadow:
-    inset 0 0 0 1px #4ade80,
+    inset 0 0 0 1px #cfde4a,
     0 1px 0 #1a1a1a,
     0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -150,7 +155,6 @@ main {
   margin: auto;
   display: flex;
   justify-content: space-between;
-
   background: linear-gradient(160deg, #2a2b30 0%, #1c1d21 100%);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
@@ -328,7 +332,33 @@ main {
   transform: scale(0.96);
 }
 
-@media (max-width: 960px) {
+.accent-picker {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.accent-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    border-color 0.1s ease;
+}
+
+.accent-swatch:hover {
+  transform: scale(1.15);
+}
+
+.accent-swatch.selected {
+  border-color: white;
+}
+
+@media (max-width: 1500px) {
   main {
     flex-direction: column;
     align-items: center;

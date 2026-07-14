@@ -3,9 +3,10 @@ import mouseKeys from "./data/mouseKeys.js";
 import keyboardKeys from "./data/keyboardKeys.js";
 import { keyboardEvents } from "./events/keyboardEvents.js";
 import { mouseEvents } from "./events/mouseEvents.js";
+import { initAccentPicker } from "./accentPicker.js";
 
 function renderApp() {
-  return `
+  return /*html*/ `
     <header>
       <h1>Keyboard & Mouse Tester</h1>
       <p class="intro">
@@ -47,11 +48,20 @@ function renderApp() {
       </div>
       <div class="mouse">
         ${mouseKeys.map((key) => `<div class="mouse-btn" data-key="${key.code}"></div>`).join("")}
+
       </div>
     </main>
+    <div class="accent-picker">
+      <button class="accent-swatch" data-color="#292929" style="background:#292929" aria-label="Wyłącz podświetlenie"></button>
+      <button class="accent-swatch" data-color="#e8544e" style="background:#e8544e" aria-label="Czerwony"></button>
+      <button class="accent-swatch" data-color="#4ade80" style="background:#4ade80" aria-label="Zielony"></button>
+      <button class="accent-swatch" data-color="#395ed4" style="background:#395ed4" aria-label="Niebieski"></button>
+      <button class="accent-swatch" data-color="#a855f7" style="background:#a855f7" aria-label="Fioletowy"></button>
+    </div>
   `;
 }
 
 document.querySelector("#app").innerHTML = renderApp();
 keyboardEvents();
 mouseEvents();
+initAccentPicker();
