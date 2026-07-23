@@ -1,8 +1,15 @@
 # ⌨️ Keyboard & Mouse Tester
 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+Wizualny tester klawiatury i myszy — sprawdź, czy wszystkie klawisze i przyciski działają poprawnie...
 Wizualny tester klawiatury i myszy — sprawdź, czy wszystkie klawisze i przyciski działają poprawnie. Kliknij fizyczny klawisz lub przycisk myszy, a odpowiadający mu element na ekranie podświetli się w czasie rzeczywistym.
 
-🔗 [**Live demo:**](https://keyboard-test-eight.vercel.app/)
+🔗 [**Live demo:**](https://keyboard-test-mpdev.vercel.app/)
 
 ## 📋 O projekcie
 
